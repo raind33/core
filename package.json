@@ -1,0 +1,24 @@
+{
+  "name": "core",
+  "version": "1.0.0",
+  "description": "tools collection",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:utils": "pnpm build --filter @raind/utils"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/raind33/core.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raind33/core/issues"
+  },
+  "homepage": "https://github.com/raind33/core#readme",
+  "dependencies": {
+  },
+  "devDependencies": {
+  }
+}
