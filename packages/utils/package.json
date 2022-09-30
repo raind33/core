@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "util tools",
   "main": "dist/utils.cjs.js",
+  "types": "dist/index.d.ts",
 
   "scripts": {
     "build": "rimraf -rf ./dist && rollup -c rollup.config.ts"
