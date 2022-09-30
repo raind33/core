@@ -2,7 +2,8 @@
   "name": "@raind/utils",
   "version": "1.0.0",
   "description": "util tools",
-  "main": "index.js",
+  "main": "dist/utils.cjs.js",
+
   "scripts": {
     "build": "rimraf -rf ./dist && rollup -c rollup.config.ts"
   },

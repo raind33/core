@@ -5,7 +5,7 @@ import typescript from '@rollup/plugin-typescript'
 import commonjs from '@rollup/plugin-commonjs'
 import pkg from './package.json'
 
-const libName = pkg.name
+const libName = pkg.name.split('/')[1]
 const extensions = ['.js', '.ts'];
 export default defineConfig({
   input: 'src/index.ts',
@@ -45,10 +45,9 @@ export default defineConfig({
       sourceMap: false,
     }),
     babel({
-      babelrc: false,
+      exclude: ['node_modules/**', /core-js/],
       babelHelpers: 'runtime',
       extensions,
-      exclude: [/\/core-js\//]
     }),
     commonjs(),
     resolve(),
